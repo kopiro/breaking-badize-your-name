@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8" />
+	<title>BreakingBad-ize your name!</title>
+	<meta name="description" content="Nothing at all, just a little Saturday leisure time">
+
+	<meta property="og:image" content="/img/image.jpg" />
+	<link rel="icon" href="/img/image.jpg" />
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+	<div class="fb-like" data-width="100" data-height="100" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="destefanoflavio" data-hashtags="BreakingBad">Tweet</a>
+
+	<input autocomplete="off" placeholder="Write here your first and last name, or type 'Breaking Bad'" id="name" />
+	<div id="names"></div>
+
+	<div id="element">
+		<div data-key="symbol" id="symbol"></div>
+		<div data-key="name" id="elname"></div>
+		<div><i>Element no.</i> <span data-key="no"></span></div>
+		<div><i>Group</i> <span data-key="group"></span></div>
+		<div><i>Period</i> <span data-key="period"></span></div>
+		<div><i>State</i> <span data-key="state"></span></div>
+		<div><i>Info</i> <span data-key="info"></span></div>
+	</div>
+
+	<div id="copy">© Flavio De Stefano - <a href="http://kopiro.it">http://kopiro.it</a></div>
+
+	<audio preload autoplay src="/audio/song.mp3" />
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+	<script src="/js/rgbcolor.js"></script>
+	<script src="/js/canvg.js"></script>
+	<script src="/js/script.js"></script>
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-20966409-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
+</html>
